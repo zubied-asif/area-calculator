@@ -36,3 +36,25 @@ function calculateParaArea(){
     Total.innerText = area;
 
 }
+
+// short function 
+function getInputValue(id){
+    const inputField = document.getElementById(id);
+    const value = parseFloat(inputField.value);
+    return value;
+} 
+function setInnerText(id, area){
+    const element =document.getElementById(id)
+    element.innerText = area;
+}
+
+// lets try
+function calculateEllipseArea(){
+   const area = getInputValue('elli-area')
+ const base = getInputValue('elli-base')
+ const areaTotal = (3.14 * area * base).toFixed(1);
+
+ 
+ setInnerText('elli-total',areaTotal)
+}
+
