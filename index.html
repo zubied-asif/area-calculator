@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="flex flex-col lg:flex-row mt-20 w-11/12 mx-auto">
+            <!-- shape con/-->
+            <div class=" gap-6 flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 "> 
+                <!-- 1st card/? -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title ">triangle</h2>
+                      <p>Area (A) = 0.5 b x h</p>
+                      <p>
+                        <input i type="text" class="border bg-gray-200 text-xl w-24 px-2"placeholder="base" name="" id="tri-base">
+                        <span class="ml-2">cm <sup>2</sup></span>
+                        <input type="text" class="ml-4 border bg-gray-200 text-xl w-24 px-2"placeholder="height" name="" id="tri-height">
+                        <span class="ml-2">cm <sup>2</sup></span>
+                      </p>
+                      <p class="text-xl">area:<span class="text-lg" id="tri-total"> 0 </span>cm<sup>2</sup></p>
+                      <div class="card-actions justify-end">
+                        <!-- * -->
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary bg-blue-600 text-white w-full mt-4">calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 2nd card/? -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">rectangle</h2>
+                        <p>Area (A) = w x I</p>
+                        <p>
+                          <input type="text" class="border bg-gray-200 text-xl w-24 px-2"placeholder="width" name="" id="rect-width">
+                          <span class="ml-2">cm <sup>2</sup></span>
+                          <input type="text" class="ml-4 border bg-gray-200 text-xl w-24 px-2"placeholder="length" name="" id="rect-length">
+                          <span class="ml-2">cm <sup>2</sup></span>
+                        </p>
+                        <p class="text-xl">area:<span class="text-lg" id="rect-total"> 0 </span>cm<sup>2</sup></p>
+                        <div class="card-actions justify-end">
+                          <button onclick="calculateRectArea()" class="btn btn-primary w-full mt-4  bg-blue-600 text-white">calculate</button>
+                        </div>
+                    </div>
+                  </div>
+                <!-- 3rd card/? -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <p>
+                          <input type="text" class="border bg-gray-200 text-xl w-24 px-2"placeholder="base" name="" id="para-base">
+                          <span class="ml-2">cm <sup>2</sup></span>
+                          <input type="text" class="ml-4 border bg-gray-200 text-xl w-24 px-2"placeholder="height" name="" id="para-height">
+                          <span class="ml-2">cm <sup>2</sup></span>
+                        </p>
+                        <p class="text-xl">area:<span class="text-lg" id="parallel-total"> 0 </span> cm <sup>2</sup></p>
+                        <div class="card-actions justify-end">
+                          <button onclick="calculateParaArea()" class="btn btn-primary w-full mt-4 bg-blue-600 text-white ">calculate</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- area calculator -->
+            <div class="w-[400px]">
+                <div class="text-4xl">area calculator</div>
+             </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="areaCalculation.js"></script>
+</body>
+
+</html>
